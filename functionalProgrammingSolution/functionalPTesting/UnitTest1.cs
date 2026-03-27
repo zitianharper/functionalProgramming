@@ -27,5 +27,13 @@ namespace functionalPTesting
 
             result.ShouldBe(expected);
         }
+
+        [Test]
+        public void ReturnAddTen()
+        {
+            int input = 1;
+            int result = Exercise001.AddTen(input);
+            result.ShouldBe(11);
+        }
     }
 }

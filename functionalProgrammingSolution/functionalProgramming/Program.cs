@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Exercise001.SquareIt(2));
+
+            List<string> words = new List<string> { "Amazing!", "apple!", "Awesome!", "Artichoke" };
+
+            foreach(string word in words)
+            {
+                Console.WriteLine(Exercise001.GrammarCheck(word));
+
+            }
+
+
         }
     }
 }
