@@ -1,11 +1,15 @@
-﻿namespace functionalProgramming
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace functionalProgramming
 {
     internal class Program
     {
         static void Main(string[] args)
         {
 
-            Console.WriteLine(Exercise002.GetCoolPeople());
+
+
+            Exercise002.GetCoolPeople().ForEach(email => Console.WriteLine(email));
             Console.WriteLine(Exercise001.CheckValidEmail("hello@northcoders.co.uk"));
 
             Console.WriteLine(Exercise001.SumIndicies("apple", "elephant"));
