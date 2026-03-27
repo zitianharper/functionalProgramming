@@ -9,7 +9,25 @@ namespace functionalProgramming
     public class Exercise001
     {
 
-      
+        public static string CheckValidEmail(string email)
+        {
+
+
+
+             Predicate<string> method1 = e => e.Contains("@northcoders.co.uk") ? true : false;
+
+             Predicate<string> method2 = e => e.IndexOf("@") < 5 ? false : true;
+
+            
+            if(method1(email) && method2(email))
+            {
+                return "Email domain and user valid, please continue";
+            
+            }
+
+            return "Email domain and user name invalid, please check your input";
+
+        }
        
 
 
