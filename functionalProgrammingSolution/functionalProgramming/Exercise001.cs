@@ -8,6 +8,22 @@ namespace functionalProgramming
 {
     public class Exercise001
     {
+
+        public string word1 = "apple";
+        public string word2 = "elephant";
+        public int output = 0;
+       
+
+
+        public static Func<string, string, int> SumIndicies = (word1, word2)
+            => word1.IndexOf("a") + word2.IndexOf("e");
+                
+
+
+
+
+
+        
         public static Func<string, bool> GrammarCheck = toCheck => toCheck.StartsWith("A") && toCheck.EndsWith("!") ;
 
         public static Func<int, int> AddTen = int1 => int1 + 10;
